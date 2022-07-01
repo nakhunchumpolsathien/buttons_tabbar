@@ -17,6 +17,7 @@ class ButtonsTabBar extends StatefulWidget implements PreferredSizeWidget {
     this.unselectedLabelStyle,
     this.splashColor,
     this.borderWidth = 0,
+    this.unselectedBorderWidth = 0, // this is what i added
     this.borderColor = Colors.black,
     this.unselectedBorderColor = Colors.black,
     this.physics = const BouncingScrollPhysics(),
@@ -315,6 +316,9 @@ class _ButtonsTabBarState extends State<ButtonsTabBar>
           boxShadow: widget.unselectedDecoration?.boxShadow,
           gradient: widget.unselectedDecoration?.gradient,
           borderRadius: BorderRadius.circular(widget.radius),
+          border: Border.all(
+            width: widget.unselectedBorderWidth ?? 0
+          ),
         ),
         BoxDecoration(
           color: widget.decoration?.color ??
