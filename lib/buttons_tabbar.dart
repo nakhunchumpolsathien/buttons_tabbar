@@ -92,6 +92,10 @@ class ButtonsTabBar extends StatefulWidget implements PreferredSizeWidget {
   /// The default value is: 0.
   final double borderWidth;
 
+
+  /// The default value is: 0.
+  final double unselectedBorderWidth;
+
   /// The [Color] of solid [Border] for each button.
   ///
   /// The default value is: [Colors.black].
