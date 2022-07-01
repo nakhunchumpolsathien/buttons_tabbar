@@ -310,6 +310,9 @@ class _ButtonsTabBarState extends State<ButtonsTabBar>
         animationValue);
     final Color? borderColor = Color.lerp(
         widget.unselectedBorderColor, widget.borderColor, animationValue);
+
+
+
     final Color foregroundColor = textStyle?.color ?? Colors.black;
 
     final BoxDecoration? boxDecoration = BoxDecoration.lerp(
@@ -320,9 +323,9 @@ class _ButtonsTabBarState extends State<ButtonsTabBar>
           boxShadow: widget.unselectedDecoration?.boxShadow,
           gradient: widget.unselectedDecoration?.gradient,
           borderRadius: BorderRadius.circular(widget.radius),
-          // border: Border.all(
-          //   width: widget.unselectedBorderWidth
-          // ),
+          border: Border.all(
+            width: 2.0
+          ),
         ),
         BoxDecoration(
           color: widget.decoration?.color ??
