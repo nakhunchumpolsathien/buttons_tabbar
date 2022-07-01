@@ -320,9 +320,9 @@ class _ButtonsTabBarState extends State<ButtonsTabBar>
           boxShadow: widget.unselectedDecoration?.boxShadow,
           gradient: widget.unselectedDecoration?.gradient,
           borderRadius: BorderRadius.circular(widget.radius),
-          border: Border.all(
-            width: widget.unselectedBorderWidth ?? 0
-          ),
+          // border: Border.all(
+          //   width: widget.unselectedBorderWidth
+          // ),
         ),
         BoxDecoration(
           color: widget.decoration?.color ??
