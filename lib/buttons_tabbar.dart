@@ -329,7 +329,7 @@ class _ButtonsTabBarState extends State<ButtonsTabBar>
         ),
         BoxDecoration(
           border: Border.all(
-              width: 3.0
+              width: 1.0
           ),
           color: widget.decoration?.color ??
               widget.backgroundColor ??
